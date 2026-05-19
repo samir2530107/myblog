@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir Travel Blog</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav nav nav"
+                "aside main main"
+                "footer footer footer";
+
+            grid-template-columns: 1fr 2fr 2fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #38bdf8;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #0369a1;
+            font-weight: bold;
+        }
+
+
+        aside {
+            grid-area: aside;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        aside img {
+            width: 350px;
+            border-radius: 12px;
+            margin: 15px 0;
+        }
+
+        .category {
+            background-color: #e0f2fe;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .post {
+            border-bottom: 1px solid red;
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 10px 0;
+        }
+
+
+
+        .date {
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #38bdf8;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Samir Travel Blog</h1>
+            <p>Stories, photos, and travel tips from my adventures.</p>
+        </header>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Travel</a>
+            <a href="#">Food</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <aside>
+            <h2>About Me</h2>
+
+            <img src="nep1.png" alt="Samir">
+
+            <p>
+                Hello! I am Samir. I love travelling, taking photos,
+                trying local food, and learning about different cultures
+                and traditions around the world.
+            </p>
+
+            <h3>Categories</h3>
+
+            <div class="category">Travel Tips</div>
+            <div class="category">Food</div>
+            <div class="category">Nature</div>
+            <div class="category">City Life</div>
+        </aside>
+
+        <main>
+
+            <article class="post">
+                <h2>A Beautiful Morning in Nepal</h2>
+
+                <p class="date">Date: May 19, 2026</p>
+
+                <img src="nep2.png" alt="Nepal Morning">
+
+                <p>
+                    Nepal is one of the most beautiful countries
+                    I have ever visited. The mountains, temples,
+                    culture, and friendly people make the country
+                    very special and unforgettable.
+                </p>
+            </article>
+
+            <article class="post">
+                <h2>Exploring the Streets of Kathmandu</h2>
+
+                <p class="date">Date: May 18, 2026</p>
+
+                <img src="nep3.png" alt="Kathmandu">
+
+                <p>
+                    Kathmandu is full of life, colorful markets,
+                    delicious local food, and historic places.
+                    Walking through the streets feels like an
+                    amazing cultural adventure.
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>© 2026 Samir Travel Blog ❤️😊👍</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

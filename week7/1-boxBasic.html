@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxA {
+            /* box-sizing: content-box; */
+            box-sizing: content-box;
+            /* width only means content area */
+            background-color: yellow;
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            /* moves the box to center automatically */
+            line-height: 100px;
+            /* to write comment ctrl+/ */
+
+        }
+
+        .boxB {
+            box-sizing: border-box;
+            /* width includes content +padding + border */
+            /*  box-sizing: border-box; */
+            background-color: red;
+            width: 200px;
+            height: 100px;
+            padding: 15px;
+            /* space between content and border inside the box */
+            border: 1px solid blue;
+            margin: 10px;
+            /* space outside the border of the box */
+            line-height: 100px;
+             margin: 10px auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxA">
+        This is a box A.
+    </div>
+    <div class="boxB">
+        This is a box B.
+
+    </div>
+
+</body>
+
+</html>
