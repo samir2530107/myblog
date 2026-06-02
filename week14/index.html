@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    background-color: #ffffff;
+    padding: 18px 40px;
+  }
+
+  header .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: green;
+  }
+
+  nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    display: inline-flex;
+  }
+
+  /* 2. Hero Section */
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e0f2fe;
+  }
+
+  .hero h1 {
+    margin: 0;
+    font-size: 42px;
+    color: green;
+  }
+
+  .hero p {
+    font-size: 18px;
+    color: #475569;
+    margin-top: 12px;
+  }
+
+  /* 3. Product Section */
+  .products {
+    text-align: center;
+    font-size: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+
+  products h2 {
+    font-size: 32px;
+    color: #2e7d32;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  /* 4. Product Card */
+  .card {
+    width: 240px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(46, 125, 50, 0.15);
+  }
+
+
+  .card img {
+    width: 100%;
+    height: 160px;
+    border-bottom: 1px solid #f0f0f0;
+    object-fit: cover;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 18px;
+  }
+
+  .card-body h3 {
+    margin: 0;
+    font-size: 21px;
+    color: #0f172a;
+  }
+
+  .card-body .price {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #64748b;
+  }
+
+  .btn {
+    display: block;
+    text-decoration: none;
+    background-color: #4caf50;
+    /* Fresh green button */
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+
+  .btn:hover {
+    background-color: #388e3c;
+    /* Darker green on button hover */
+  }
+
+  .btn:active {
+    transform: scale(0.98);
+  }
+
+  /* --- Footer --- */
+  footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+</style>
+
+<body>
+
+  <header>
+    <div class="logo">Fresh Shop</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Sale</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Fresh Products for Your Daily Life</h1>
+    <p>Choose your favorite items from our fresh and healthy collection.</p>
+  </section>
+
+  <section class="products">
+    <h2>Our Products</h2>
+
+    <div class="product-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=600&q=80; alt="
+          Apple">
+        <div class="card-body">
+          <h3>Fresh Apples</h3>
+          <p class="price">$5.99</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80; alt="
+          Honey">
+        <div class="card-body">
+          <h3>Natural Honey</h3>
+          <p class="price">$12.99</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?auto=format&fit=crop&w=600&q=80; alt="
+          Orange">
+        <div class="card-body">
+          <h3>Sweet Oranges</h3>
+          <p class="price">$4.99</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=600&q=80; alt="
+          Banana">
+        <div class="card-body">
+          <h3>Banana Pack</h3>
+          <p class="price">$3.99</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=600&q=80; alt="
+          Tomato">
+        <div class="card-body">
+          <h3>Fresh Tomatoes</h3>
+          <p class="price">$6.50</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80; alt="
+          Potato">
+        <div class="card-body">
+          <h3>Organic Potatoes</h3>
+          <p class="price">$7.20</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?auto=format&fit=crop&w=600&q=80; alt="
+          Milk">
+        <div class="card-body">
+          <h3>Fresh Milk</h3>
+          <p class="price">$2.99</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=600&q=80; alt="
+          Bread">
+        <div class="card-body">
+          <h3>Soft Bread</h3>
+          <p class="price">$3.50</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Fresh Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
